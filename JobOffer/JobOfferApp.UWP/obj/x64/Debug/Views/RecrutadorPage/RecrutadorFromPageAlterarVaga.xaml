@@ -1,0 +1,120 @@
+﻿<Page x:ConnectionId='1'
+    x:Class="JobOfferApp.UWP.Views.RecrutadorPage.RecrutadorFromPageAlterarVaga"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:JobOfferApp.UWP.Views.RecrutadorPage"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text =" Editar Vaga" Style="{StaticResource HeaderTextBlockStyle}"/>
+            <CommandBar x:ConnectionId='12' x:Name="mainComandBar" Grid.Column="1"
+                        VerticalAlignment="Center"
+                        Background="Transparent"
+                        OverflowButtonVisibility="Collapsed"
+                        DefaultLabelPosition="Right">
+
+                <AppBarButton x:ConnectionId='13' 
+                    x:Name="btnEdit"
+                                         
+                    Icon="Edit"
+                    Label="Edit">
+                </AppBarButton>
+
+                <!--Todo manege visibili-->
+                <AppBarButton x:ConnectionId='14' 
+                    x:Name="btnCancel"
+                                           
+                    Icon="Cancel"
+                    Label="Cancel"/>
+                <!--Todo manege visibili-->
+            </CommandBar>
+
+        </Grid>
+        <StackPanel Grid.Row="1">
+            <TextBlock></TextBlock>
+            <StackPanel>
+                <ComboBox x:ConnectionId='10' x:Name="Textboxid" 
+                      Header="Id Vaga" 
+                      PlaceholderText ="Selecione Vaga"
+                      Height="61" 
+                      Width="473"
+                                                                
+                      DisplayMemberPath="Id"
+                                                             
+                                                                   >
+                </ComboBox>
+                <TextBox x:ConnectionId='11' x:Name="Textboxname" Header="Nome:"
+                                                               
+                                                                      />
+
+
+            </StackPanel>
+            <StackPanel>
+                <TextBox x:ConnectionId='9' x:Name="Tipodecontrato" Header="Tipo de Contrato:"/>
+
+
+            </StackPanel>
+            <StackPanel>
+                <TextBox x:ConnectionId='8' x:Name="TextboxRegime" Header="Regime:"/>
+
+            </StackPanel>
+            <StackPanel>
+                <TextBox x:ConnectionId='7' x:Name="Textboxhorario" Header="Horario:"/>
+
+
+            </StackPanel>
+            <StackPanel>
+                <TextBox x:ConnectionId='6' x:Name="Textboxnvaga" Header="Numero de Vagas:"/>
+
+            </StackPanel>
+            <TextBox x:ConnectionId='2' x:Name="Textboxidrecrutador" Header="Recrutador:" 
+                     IsReadOnly="True"/>
+            <StackPanel>
+                <!-- verificar aqui para aparecer as estado-->
+                <ComboBox x:ConnectionId='5' x:Name="Textboxestado"
+                      Header="Estado"
+                      PlaceholderText="Selecione o Estado" 
+                      Height="61" 
+                      Width="473"
+                                                                    
+                      DisplayMemberPath="Descricao"
+                                                                 >
+
+                </ComboBox>
+            </StackPanel>
+            <!-- verificar aqui para aparecer as empresas/cargo-->
+            <ComboBox x:ConnectionId='3' x:Name="Textboxcargo" 
+                      Header="Cargo" 
+                      PlaceholderText ="Selecione Cargo"
+                      Height="61" 
+                      Width="473"
+                                                                  
+                      DisplayMemberPath="Descricao"
+                                                                >
+            </ComboBox>
+            <ComboBox x:ConnectionId='4' x:Name="Textboxempresa" 
+                      Header="Empresa"
+                      PlaceholderText="Selecione Empresa"
+                      Height="61" 
+                      Width="473"
+                                                                      
+                      DisplayMemberPath="Nome"
+                                                                  >
+            </ComboBox>
+        </StackPanel>
+    </Grid>
+    
+</Page>
+

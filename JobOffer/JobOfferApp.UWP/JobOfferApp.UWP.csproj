@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{889C80FB-A25F-4069-A13F-0EE66E211B73}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JobOfferApp.UWP</RootNamespace>
+    <AssemblyName>JobOfferApp.UWP</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion Condition=" '$(TargetPlatformVersion)' == '' ">10.0.22000.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.19041.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WindowsXamlEnableOverview>true</WindowsXamlEnableOverview>
+    <AppxPackageSigningEnabled>false</AppxPackageSigningEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM64'">
+    <OutputPath>bin\ARM64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPage.xaml.cs">
+      <DependentUpon>LoginPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\CandidatoHasVagaViewModel.cs" />
+    <Compile Include="ViewModels\CandidatoViewModel.cs" />
+    <Compile Include="ViewModels\EmpesaViewModel.cs" />
+    <Compile Include="ViewModels\CargoViewModel.cs" />
+    <Compile Include="ViewModels\BindableBase.cs" />
+    <Compile Include="ViewModels\EstadoViewModel.cs" />
+    <Compile Include="ViewModels\NivelViewModel.cs" />
+    <Compile Include="ViewModels\RecrutadorViewModel.cs" />
+    <Compile Include="ViewModels\VagaViewModel.cs" />
+    <Compile Include="Views\Administrador\AdministradoPage.xaml.cs">
+      <DependentUpon>AdministradoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Administrador\FromAdministradorPageCargo.xaml.cs">
+      <DependentUpon>FromAdministradorPageCargo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Administrador\FromAdministradorPageEmpresa.xaml.cs">
+      <DependentUpon>FromAdministradorPageEmpresa.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Administrador\RegistreCargoDialog.xaml.cs">
+      <DependentUpon>RegistreCargoDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Administrador\RegistreEmpresaDialog.xaml.cs">
+      <DependentUpon>RegistreEmpresaDialog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CandidatoPage\CandidatoFromPageCandidatar.xaml.cs">
+      <DependentUpon>CandidatoFromPageCandidatar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CandidatoPage\CandidatoFromPageEstadoVaga.xaml.cs">
+      <DependentUpon>CandidatoFromPageEstadoVaga.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CandidatoPage\CandidatoFromPageMinhaConta.xaml.cs">
+      <DependentUpon>CandidatoFromPageMinhaConta.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CandidatoPage\CandidatoFromPageVagaDisponivel.xaml.cs">
+      <DependentUpon>CandidatoFromPageVagaDisponivel.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CandidatoPage\DialogEditarMinhaContaCandidato.xaml.cs">
+      <DependentUpon>DialogEditarMinhaContaCandidato.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\CandidatoPage\ManageCandidatos.xaml.cs">
+      <DependentUpon>ManageCandidatos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Login\FromLoginPageCandidato.xaml.cs">
+      <DependentUpon>FromLoginPageCandidato.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Login\FromPageLogin.xaml.cs">
+      <DependentUpon>FromPageLogin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RecrutadorPage\DialogEditarConta.xaml.cs">
+      <DependentUpon>DialogEditarConta.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RecrutadorPage\ManageRecrutadores.xaml.cs">
+      <DependentUpon>ManageRecrutadores.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RecrutadorPage\RecrutadorFromPageAlterarVaga.xaml.cs">
+      <DependentUpon>RecrutadorFromPageAlterarVaga.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RecrutadorPage\RecrutadorFromPageAnalisarVaga.xaml.cs">
+      <DependentUpon>RecrutadorFromPageAnalisarVaga.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RecrutadorPage\RecrutadorFromPageCandidaturas.xaml.cs">
+      <DependentUpon>RecrutadorFromPageCandidaturas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RecrutadorPage\RecrutadorFromPageCargos.xaml.cs">
+      <DependentUpon>RecrutadorFromPageCargos.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RecrutadorPage\RecrutadorFromPageHistorico.xaml.cs">
+      <DependentUpon>RecrutadorFromPageHistorico.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RecrutadorPage\RecrutadorFromPageMinhaConta.xaml.cs">
+      <DependentUpon>RecrutadorFromPageMinhaConta.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RecrutadorPage\RecrutadorFromPageAddVaga.xaml.cs">
+      <DependentUpon>RecrutadorFromPageAddVaga.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RecrutadorPage\RecrutadorFromPageMinhasVagas.xaml.cs">
+      <DependentUpon>RecrutadorFromPageMinhasVagas.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\avata1.png" />
+    <Content Include="Assets\experiencia.jpg" />
+    <Content Include="Assets\imagem_utilizador.jpg" />
+    <Content Include="Assets\locker.png" />
+    <Content Include="Assets\logo1_branco.png" />
+    <Content Include="Assets\LOGO_1.png" />
+    <Content Include="Assets\teste 2.png" />
+    <Content Include="Assets\teste_.png" />
+    <Content Include="Assets\teste_branco.png" />
+    <Content Include="Assets\user.png" />
+    <Content Include="Assets\utili.png" />
+    <Content Include="Properties\Default.rd.xml" />
+    <Content Include="Assets\LockScreenLogo.scale-200.png" />
+    <Content Include="Assets\SplashScreen.scale-200.png" />
+    <Content Include="Assets\Square150x150Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.scale-200.png" />
+    <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
+    <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-200.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="LoginPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Administrador\AdministradoPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Administrador\FromAdministradorPageCargo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Administrador\FromAdministradorPageEmpresa.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Administrador\RegistreCargoDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Administrador\RegistreEmpresaDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CandidatoPage\CandidatoFromPageCandidatar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CandidatoPage\CandidatoFromPageEstadoVaga.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CandidatoPage\CandidatoFromPageMinhaConta.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CandidatoPage\CandidatoFromPageVagaDisponivel.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CandidatoPage\DialogEditarMinhaContaCandidato.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\CandidatoPage\ManageCandidatos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Login\FromLoginPageCandidato.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Login\FromPageLogin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\RecrutadorPage\DialogEditarConta.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\RecrutadorPage\ManageRecrutadores.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\RecrutadorPage\RecrutadorFromPageAlterarVaga.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\RecrutadorPage\RecrutadorFromPageAnalisarVaga.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\RecrutadorPage\RecrutadorFromPageCandidaturas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\RecrutadorPage\RecrutadorFromPageCargos.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\RecrutadorPage\RecrutadorFromPageHistorico.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\RecrutadorPage\RecrutadorFromPageMinhaConta.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\RecrutadorPage\RecrutadorFromPageAddVaga.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\RecrutadorPage\RecrutadorFromPageMinhasVagas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
+      <Version>6.2.14</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JobOffer.Domain\JobOffer.Domain.csproj">
+      <Project>{0E7AD85E-6856-4E19-B3F2-027F2BC56B64}</Project>
+      <Name>JobOffer.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JobOffer.Infrastructure\JobOffer.Infrastructure.csproj">
+      <Project>{91A9A4C4-A59E-4FBB-8056-FE11EB1DABA0}</Project>
+      <Name>JobOffer.Infrastructure</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

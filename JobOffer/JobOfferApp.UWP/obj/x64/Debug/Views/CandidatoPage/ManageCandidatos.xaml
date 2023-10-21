@@ -1,0 +1,47 @@
+﻿<Page x:ConnectionId='1'
+    x:Class="JobOfferApp.UWP.Views.Candidato.ManageCandidato"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:JobOfferApp.UWP.Views.Candidato"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <NavigationView x:ConnectionId='2' x:Name ="MainNavigation"
+                        IsSettingsVisible="False"
+                        OpenPaneLength="200"
+                                                                
+                                                                                     >
+            <NavigationView.MenuItems>
+                <NavigationViewItem x:ConnectionId='3' x:Name="NavMinhaConta"
+                                    Content="Minha Conta"
+                                    Icon="Contact" 
+                                    Tag="Minha Conta"/>
+                <NavigationViewItem x:ConnectionId='4' x:Name="NavEstadoVaga"
+                                    Content="Estado Vaga"
+                                    Icon="Highlight" 
+                                    Tag="NavEstadoVaga"/>
+                <NavigationViewItem x:ConnectionId='5' x:Name="NavCandidatarAVaga"
+                                    Content="Vagas Disponiveis"
+                                    Icon="Library" 
+                                    Tag="NavCandidatarAVaga"/>
+
+            </NavigationView.MenuItems>
+            <NavigationView.PaneFooter>
+                <StackPanel>
+                    <NavigationViewItem x:ConnectionId='6' x:Name ="NavClose"
+                                        Content="Sair"
+                                        Icon="ClosePane" 
+                                                                />
+                    
+                </StackPanel>
+            </NavigationView.PaneFooter>
+            <Frame x:ConnectionId='7' x:Name="MainFrame" Padding="10,0"
+                   BorderBrush="Blue"
+                   BorderThickness="1"/>
+        </NavigationView>
+    </Grid>
+</Page>
+

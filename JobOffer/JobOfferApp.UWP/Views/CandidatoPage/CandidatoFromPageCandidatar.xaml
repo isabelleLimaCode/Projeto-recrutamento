@@ -1,0 +1,67 @@
+﻿<Page
+    x:Class="JobOfferApp.UWP.Views.CandidatoPage.CandidatoFromPageCandidatar"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:JobOfferApp.UWP.Views.CandidatoPage"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text ="Candidatar a Vaga" Style="{StaticResource HeaderTextBlockStyle}"/>
+            <CommandBar x:Name="mainComandBar" Grid.Column="1"
+                        VerticalAlignment="Center"
+                        Background="Transparent"
+                        OverflowButtonVisibility="Collapsed"
+                        DefaultLabelPosition="Right">
+
+                <AppBarButton 
+                    x:Name="btnSave"
+                    Click="btnSave_Click"
+                    Icon="Save"
+                    Label="Save"
+                    ToolTipService.ToolTip="Save Category">
+                </AppBarButton>
+                <AppBarButton 
+                    x:Name="btnCancel"
+                    Click="btnCancel_Click"
+                    Icon="Cancel"
+                    Label="Cancel"/>
+                <!--Todo manege visibili-->
+            </CommandBar>
+        </Grid>
+        <StackPanel Grid.Row="1">
+            <TextBlock></TextBlock>
+                <ComboBox x:Name="ComboxVaga" 
+                          Header="Id Vaga Analisar:" 
+                          Width="418"
+                          ItemsSource="{x:Bind VagaViewModel.vagas}"
+                          DisplayMemberPath="Id"
+                          TextSubmitted="ComboxVaga_TextSubmitted"
+                          SelectionChanged="ComboxVaga_SelectionChanged">
+
+
+                </ComboBox>
+
+            <TextBox x:Name="Textcandidatoid" Header="Id Candidato:"
+                     IsReadOnly="True"/>
+            <TextBox x:Name="TextDescricao" Header="Descrição:"
+                     IsReadOnly="True"/>
+            <TextBox x:Name="TextboxData" Header="Data:" 
+                     IsReadOnly="True"/>
+            <TextBox x:Name="TextboxEstadoCandidatura" 
+                     Header="Estado Candidatura"
+                     IsReadOnly="True"/>
+        </StackPanel>
+    </Grid>
+</Page>

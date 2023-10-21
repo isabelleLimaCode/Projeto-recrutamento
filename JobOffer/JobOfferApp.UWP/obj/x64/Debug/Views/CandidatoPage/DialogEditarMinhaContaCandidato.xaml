@@ -1,0 +1,33 @@
+﻿<ContentDialog x:ConnectionId='1'
+    x:Class="JobOfferApp.UWP.Views.CandidatoPage.DialogEditarMinhaContaCandidato"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:JobOfferApp.UWP.Views.CandidatoPage"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+   Title="Editar Usuario"
+    PrimaryButtonText="Save"
+    SecondaryButtonText="cancel"
+                                                         
+                                                             >
+
+    <Grid>
+        <StackPanel>
+            <TextBox x:ConnectionId='2' x:Name="TextNome" Header="Username:"/>
+            <TextBox x:ConnectionId='3' x:Name="Txtpass" Header="Password:"/>
+            <TextBox x:ConnectionId='4' x:Name="TxtExperiencia" Header="Experiencia:"/>
+            <TextBox x:ConnectionId='5' x:Name="TxtNvEscolaridade" Header="Nivel Escolaridade:"/>
+            <TextBox x:ConnectionId='6' x:Name="TxtNvCompetenciasDigitais" Header="Nivel Competencias Digitais:"/>
+            <TextBox x:ConnectionId='7' x:Name="TxtNv" Header="Nivel:"/>
+            <TextBox x:ConnectionId='8' x:Name="TxtIdiomas" Header="Idiomas:"/>
+            <Border x:ConnectionId='9' Background="Red" BorderBrush="Black" BorderThickness="2
+                      " Margin="0,10" Padding="5" 
+                                                                                    >
+                <TextBlock VerticalAlignment="Center" Foreground="White"
+                           Text="login failed"/>
+            </Border>
+        </StackPanel>
+    </Grid>
+</ContentDialog>
+

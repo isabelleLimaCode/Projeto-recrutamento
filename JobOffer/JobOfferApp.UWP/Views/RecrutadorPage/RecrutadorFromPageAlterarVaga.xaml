@@ -1,0 +1,119 @@
+﻿<Page
+    x:Class="JobOfferApp.UWP.Views.RecrutadorPage.RecrutadorFromPageAlterarVaga"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:JobOfferApp.UWP.Views.RecrutadorPage"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text =" Editar Vaga" Style="{StaticResource HeaderTextBlockStyle}"/>
+            <CommandBar x:Name="mainComandBar" Grid.Column="1"
+                        VerticalAlignment="Center"
+                        Background="Transparent"
+                        OverflowButtonVisibility="Collapsed"
+                        DefaultLabelPosition="Right">
+
+                <AppBarButton 
+                    x:Name="btnEdit"
+                    Click="btnEdit_Click"
+                    Icon="Edit"
+                    Label="Edit">
+                </AppBarButton>
+
+                <!--Todo manege visibili-->
+                <AppBarButton 
+                    x:Name="btnCancel"
+                    Click="btnCancel_Click"
+                    Icon="Cancel"
+                    Label="Cancel"/>
+                <!--Todo manege visibili-->
+            </CommandBar>
+
+        </Grid>
+        <StackPanel Grid.Row="1">
+            <TextBlock></TextBlock>
+            <StackPanel>
+                <ComboBox x:Name="Textboxid" 
+                      Header="Id Vaga" 
+                      PlaceholderText ="Selecione Vaga"
+                      Height="61" 
+                      Width="473"
+                      ItemsSource="{x:Bind VagaViewModel.vagas}"
+                      DisplayMemberPath="Id"
+                      TextSubmitted="Textboxid_TextSubmitted"
+                      SelectionChanged="Textboxid_SelectionChanged">
+                </ComboBox>
+                <TextBox x:Name="Textboxname" Header="Nome:"
+                         Text="{x:Bind VagaViewModel.VagaNome, 
+                    Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+
+
+            </StackPanel>
+            <StackPanel>
+                <TextBox x:Name="Tipodecontrato" Header="Tipo de Contrato:"/>
+
+
+            </StackPanel>
+            <StackPanel>
+                <TextBox x:Name="TextboxRegime" Header="Regime:"/>
+
+            </StackPanel>
+            <StackPanel>
+                <TextBox x:Name="Textboxhorario" Header="Horario:"/>
+
+
+            </StackPanel>
+            <StackPanel>
+                <TextBox x:Name="Textboxnvaga" Header="Numero de Vagas:"/>
+
+            </StackPanel>
+            <TextBox x:Name="Textboxidrecrutador" Header="Recrutador:" 
+                     IsReadOnly="True"/>
+            <StackPanel>
+                <!-- verificar aqui para aparecer as estado-->
+                <ComboBox x:Name="Textboxestado"
+                      Header="Estado"
+                      PlaceholderText="Selecione o Estado" 
+                      Height="61" 
+                      Width="473"
+                      ItemsSource="{x:Bind EstadoViewModel.Estados}"
+                      DisplayMemberPath="Descricao"
+                      TextSubmitted="Textboxestado_TextSubmitted">
+
+                </ComboBox>
+            </StackPanel>
+            <!-- verificar aqui para aparecer as empresas/cargo-->
+            <ComboBox x:Name="Textboxcargo" 
+                      Header="Cargo" 
+                      PlaceholderText ="Selecione Cargo"
+                      Height="61" 
+                      Width="473"
+                      ItemsSource="{x:Bind CargoViewModel.Cargos}"
+                      DisplayMemberPath="Descricao"
+                      TextSubmitted="Textboxcargo_TextSubmitted">
+            </ComboBox>
+            <ComboBox x:Name="Textboxempresa" 
+                      Header="Empresa"
+                      PlaceholderText="Selecione Empresa"
+                      Height="61" 
+                      Width="473"
+                      ItemsSource="{x:Bind EmpresaViewModel.Empresas}"
+                      DisplayMemberPath="Nome"
+                      TextSubmitted="Textboxempresa_TextSubmitted">
+            </ComboBox>
+        </StackPanel>
+    </Grid>
+    
+</Page>

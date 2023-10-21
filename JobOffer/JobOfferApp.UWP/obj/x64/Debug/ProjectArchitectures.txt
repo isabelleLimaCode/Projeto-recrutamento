@@ -1,0 +1,1 @@
+C:\Users\isabe\Desktop\Projeto_Parte3_JobOffer_a43360_a39617_a47338\ad-ei-project-group-10-main\JobOffer\JobOfferApp.UWP\JobOfferApp.UWP.csproj;x64

@@ -1,0 +1,60 @@
+﻿<Page
+    x:Class="JobOfferApp.UWP.Views.Recrutador.ManageRecrutadores"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:JobOfferApp.UWP.Views.Recrutador"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <NavigationView x:Name ="MainNavigation"
+                        IsSettingsVisible="False"
+                        OpenPaneLength="200"
+                        ItemInvoked="MainNavigation_ItemInvoked"
+                        PaneTitle="{x:Bind RecrutadorViewModel.IsLooged, Mode=OneWay}"
+                        DisplayModeChanged="MainNavigation_DisplayModeChanged">
+            
+            <NavigationView.MenuItems>
+                <NavigationViewItem x:Name="NavMinhaConta"
+                                    Content="Minha Conta"
+                                    Icon="Contact" 
+                                    Tag="Minha Conta"/>
+                <NavigationViewItem x:Name="NavAddVaga"
+                                    Content="Adicionar Vaga"
+                                    Icon="Add" 
+                                    Tag="NavAddVaga"/>
+                <NavigationViewItem x:Name="NavVisuzalizarVagaasCandidaturas"
+                                    Content="Candidaturas"
+                                    Icon="List" 
+                                    Tag="NavVisuzalizarVagaasCandidaturas"/>
+                <NavigationViewItem x:Name="NavVisualizarCargo"
+                                    Content="Cargos"
+                                    Icon="List" 
+                                    Tag="NavVisualizarCargo"/>
+                <NavigationViewItem x:Name="NavVisualizarMinhasVagas"
+                                    Content="Minhas Vagas"
+                                    Icon="Library" 
+                                    Tag="NavVisualizarMinhasVagas"/>
+                <NavigationViewItem x:Name="NavVisualizarMeuHistorico"
+                                    Content="Historico Vaga"
+                                    Icon="Library" 
+                                    Tag="NavVisualizarMeuHistorico"/>
+            </NavigationView.MenuItems>
+            <NavigationView.PaneFooter>
+                <StackPanel>
+                    <NavigationViewItem x:Name ="NavSair"
+                                        Content="Sair"
+                                        Icon="ClosePane" 
+                                        Tapped="NavSair_Tapped"
+                                        Tag="NavSair"/>
+                </StackPanel>
+            </NavigationView.PaneFooter>
+            <Frame x:Name="MainFrame" Padding="10,0"
+                   BorderBrush="Blue"
+                   BorderThickness="1"/>
+        </NavigationView>
+
+    </Grid>
+</Page>

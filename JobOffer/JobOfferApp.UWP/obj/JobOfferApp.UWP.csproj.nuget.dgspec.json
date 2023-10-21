@@ -1,0 +1,236 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\isabe\\Desktop\\Projeto_Parte3_JobOffer_a43360_a39617_a47338\\ad-ei-project-group-10-main\\JobOffer\\JobOfferApp.UWP\\JobOfferApp.UWP.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\isabe\\Desktop\\Projeto_Parte3_JobOffer_a43360_a39617_a47338\\ad-ei-project-group-10-main\\JobOffer\\JobOffer.Domain\\JobOffer.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\isabe\\Desktop\\Projeto_Parte3_JobOffer_a43360_a39617_a47338\\ad-ei-project-group-10-main\\JobOffer\\JobOffer.Domain\\JobOffer.Domain.csproj",
+        "projectName": "JobOffer.Domain",
+        "projectPath": "C:\\Users\\isabe\\Desktop\\Projeto_Parte3_JobOffer_a43360_a39617_a47338\\ad-ei-project-group-10-main\\JobOffer\\JobOffer.Domain\\JobOffer.Domain.csproj",
+        "packagesPath": "C:\\Users\\isabe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\isabe\\Desktop\\Projeto_Parte3_JobOffer_a43360_a39617_a47338\\ad-ei-project-group-10-main\\JobOffer\\JobOffer.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\isabe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[3.1.30, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.30, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\isabe\\Desktop\\Projeto_Parte3_JobOffer_a43360_a39617_a47338\\ad-ei-project-group-10-main\\JobOffer\\JobOffer.Infrastructure\\JobOffer.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\isabe\\Desktop\\Projeto_Parte3_JobOffer_a43360_a39617_a47338\\ad-ei-project-group-10-main\\JobOffer\\JobOffer.Infrastructure\\JobOffer.Infrastructure.csproj",
+        "projectName": "JobOffer.Infrastructure",
+        "projectPath": "C:\\Users\\isabe\\Desktop\\Projeto_Parte3_JobOffer_a43360_a39617_a47338\\ad-ei-project-group-10-main\\JobOffer\\JobOffer.Infrastructure\\JobOffer.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\isabe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\isabe\\Desktop\\Projeto_Parte3_JobOffer_a43360_a39617_a47338\\ad-ei-project-group-10-main\\JobOffer\\JobOffer.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\isabe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "C:\\Users\\isabe\\Desktop\\Projeto_Parte3_JobOffer_a43360_a39617_a47338\\ad-ei-project-group-10-main\\JobOffer\\JobOffer.Domain\\JobOffer.Domain.csproj": {
+                "projectPath": "C:\\Users\\isabe\\Desktop\\Projeto_Parte3_JobOffer_a43360_a39617_a47338\\ad-ei-project-group-10-main\\JobOffer\\JobOffer.Domain\\JobOffer.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.30, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[3.1.30, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[3.1.30, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\isabe\\Desktop\\Projeto_Parte3_JobOffer_a43360_a39617_a47338\\ad-ei-project-group-10-main\\JobOffer\\JobOfferApp.UWP\\JobOfferApp.UWP.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\isabe\\Desktop\\Projeto_Parte3_JobOffer_a43360_a39617_a47338\\ad-ei-project-group-10-main\\JobOffer\\JobOfferApp.UWP\\JobOfferApp.UWP.csproj",
+        "projectName": "JobOfferApp.UWP",
+        "projectPath": "C:\\Users\\isabe\\Desktop\\Projeto_Parte3_JobOffer_a43360_a39617_a47338\\ad-ei-project-group-10-main\\JobOffer\\JobOfferApp.UWP\\JobOfferApp.UWP.csproj",
+        "packagesPath": "C:\\Users\\isabe\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\isabe\\Desktop\\Projeto_Parte3_JobOffer_a43360_a39617_a47338\\ad-ei-project-group-10-main\\JobOffer\\JobOfferApp.UWP\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\isabe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "uap10.0.19041"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "uap10.0.19041": {
+            "projectReferences": {
+              "C:\\Users\\isabe\\Desktop\\Projeto_Parte3_JobOffer_a43360_a39617_a47338\\ad-ei-project-group-10-main\\JobOffer\\JobOffer.Domain\\JobOffer.Domain.csproj": {
+                "projectPath": "C:\\Users\\isabe\\Desktop\\Projeto_Parte3_JobOffer_a43360_a39617_a47338\\ad-ei-project-group-10-main\\JobOffer\\JobOffer.Domain\\JobOffer.Domain.csproj"
+              },
+              "C:\\Users\\isabe\\Desktop\\Projeto_Parte3_JobOffer_a43360_a39617_a47338\\ad-ei-project-group-10-main\\JobOffer\\JobOffer.Infrastructure\\JobOffer.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\isabe\\Desktop\\Projeto_Parte3_JobOffer_a43360_a39617_a47338\\ad-ei-project-group-10-main\\JobOffer\\JobOffer.Infrastructure\\JobOffer.Infrastructure.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "uap10.0.19041": {
+          "dependencies": {
+            "Microsoft.NETCore.UniversalWindowsPlatform": {
+              "target": "Package",
+              "version": "[6.2.14, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      },
+      "runtimes": {
+        "win10-arm": {
+          "#import": []
+        },
+        "win10-arm-aot": {
+          "#import": []
+        },
+        "win10-arm64-aot": {
+          "#import": []
+        },
+        "win10-x64": {
+          "#import": []
+        },
+        "win10-x64-aot": {
+          "#import": []
+        },
+        "win10-x86": {
+          "#import": []
+        },
+        "win10-x86-aot": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

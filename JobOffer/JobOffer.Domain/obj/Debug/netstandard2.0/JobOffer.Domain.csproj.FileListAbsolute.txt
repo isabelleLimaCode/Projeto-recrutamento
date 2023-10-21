@@ -1,0 +1,10 @@
+C:\Users\isabe\Desktop\Projeto_Parte3_JobOffer_a43360_a39617_a47338\ad-ei-project-group-10-main\JobOffer\JobOffer.Domain\bin\Debug\netstandard2.0\JobOffer.Domain.deps.json
+C:\Users\isabe\Desktop\Projeto_Parte3_JobOffer_a43360_a39617_a47338\ad-ei-project-group-10-main\JobOffer\JobOffer.Domain\bin\Debug\netstandard2.0\JobOffer.Domain.dll
+C:\Users\isabe\Desktop\Projeto_Parte3_JobOffer_a43360_a39617_a47338\ad-ei-project-group-10-main\JobOffer\JobOffer.Domain\bin\Debug\netstandard2.0\JobOffer.Domain.pdb
+C:\Users\isabe\Desktop\Projeto_Parte3_JobOffer_a43360_a39617_a47338\ad-ei-project-group-10-main\JobOffer\JobOffer.Domain\obj\Debug\netstandard2.0\JobOffer.Domain.csproj.AssemblyReference.cache
+C:\Users\isabe\Desktop\Projeto_Parte3_JobOffer_a43360_a39617_a47338\ad-ei-project-group-10-main\JobOffer\JobOffer.Domain\obj\Debug\netstandard2.0\JobOffer.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\isabe\Desktop\Projeto_Parte3_JobOffer_a43360_a39617_a47338\ad-ei-project-group-10-main\JobOffer\JobOffer.Domain\obj\Debug\netstandard2.0\JobOffer.Domain.AssemblyInfoInputs.cache
+C:\Users\isabe\Desktop\Projeto_Parte3_JobOffer_a43360_a39617_a47338\ad-ei-project-group-10-main\JobOffer\JobOffer.Domain\obj\Debug\netstandard2.0\JobOffer.Domain.AssemblyInfo.cs
+C:\Users\isabe\Desktop\Projeto_Parte3_JobOffer_a43360_a39617_a47338\ad-ei-project-group-10-main\JobOffer\JobOffer.Domain\obj\Debug\netstandard2.0\JobOffer.Domain.csproj.CoreCompileInputs.cache
+C:\Users\isabe\Desktop\Projeto_Parte3_JobOffer_a43360_a39617_a47338\ad-ei-project-group-10-main\JobOffer\JobOffer.Domain\obj\Debug\netstandard2.0\JobOffer.Domain.dll
+C:\Users\isabe\Desktop\Projeto_Parte3_JobOffer_a43360_a39617_a47338\ad-ei-project-group-10-main\JobOffer\JobOffer.Domain\obj\Debug\netstandard2.0\JobOffer.Domain.pdb
