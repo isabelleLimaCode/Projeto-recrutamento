@@ -1,7 +1,7 @@
 # Projeto-recrutamento
 
-Este projeto tem como objetivo a criação de uma aplicação destinada a diversas empresas, permitindo que publiquem e notifiquem suas vagas de emprego de maneira prática e eficiente. Isso facilita a conexão entre empregadores e candidatos, tornando a busca por emprego mais acessível e organizada para os candidatos. A aplicação foi desenvolvida na disciplina de Desenvolvimento de Aplicações, utilizando C# e UWP.
 
+Este projeto tem como objetivo desenvolver uma aplicação voltada para empresas, permitindo a publicação e notificação eficiente de vagas de emprego. A ferramenta facilita a conexão entre empregadores e candidatos, tornando o processo de busca por emprego mais acessível e organizado. A aplicação foi criada no âmbito da disciplina de Desenvolvimento de Aplicações, utilizando C# e UWP. A seguir, apresenta-se uma demonstração focada exclusivamente na implementação em C#.
 
 
 
